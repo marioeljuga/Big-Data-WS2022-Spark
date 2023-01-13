@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://192.168.199.80:4040/jobs/ -->
+<html class=" omjoae idc0_345"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="./marioApp - Spark Jobs_files/bootstrap.min.css" type="text/css"><link rel="stylesheet" href="./marioApp - Spark Jobs_files/vis-timeline-graph2d.min.css" type="text/css"><link rel="stylesheet" href="./marioApp - Spark Jobs_files/webui.css" type="text/css"><link rel="stylesheet" href="./marioApp - Spark Jobs_files/timeline-view.css" type="text/css"><script src="./marioApp - Spark Jobs_files/sorttable.js"></script><script src="./marioApp - Spark Jobs_files/jquery-3.5.1.min.js"></script><script src="./marioApp - Spark Jobs_files/vis-timeline-graph2d.min.js"></script><script src="./marioApp - Spark Jobs_files/bootstrap.bundle.min.js"></script><script src="./marioApp - Spark Jobs_files/initialize-tooltips.js"></script><script src="./marioApp - Spark Jobs_files/table.js"></script><script src="./marioApp - Spark Jobs_files/timeline-view.js"></script><script src="./marioApp - Spark Jobs_files/log-view.js"></script><script src="./marioApp - Spark Jobs_files/webui.js"></script><script>setUIRoot('')</script>
+        <script>setAppBasePath('')</script>
+        
+        
+        <link rel="shortcut icon" href="./marioApp - Spark Jobs_files/spark-logo-77x50px-hd.png">
+        <title>marioApp - Spark Jobs</title>
+      </head>
+      <body data-new-gr-c-s-check-loaded="14.1091.0" data-gr-ext-installed="">
+        <nav class="navbar navbar-expand-md navbar-light bg-light mb-4">
+          <div class="navbar-header">
+            <div class="navbar-brand">
+              <a href="http://192.168.199.80:4040/">
+                <img src="./marioApp - Spark Jobs_files/spark-logo-77x50px-hd.png">
+                <span class="version">3.3.1</span>
+              </a>
+            </div>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto"><li class="nav-item active">
+        <a class="nav-link" href="http://192.168.199.80:4040/jobs/">Jobs</a>
+      </li><li class="nav-item">
+        <a class="nav-link" href="http://192.168.199.80:4040/stages/">Stages</a>
+      </li><li class="nav-item">
+        <a class="nav-link" href="http://192.168.199.80:4040/storage/">Storage</a>
+      </li><li class="nav-item">
+        <a class="nav-link" href="http://192.168.199.80:4040/environment/">Environment</a>
+      </li><li class="nav-item">
+        <a class="nav-link" href="http://192.168.199.80:4040/executors/">Executors</a>
+      </li><li class="nav-item">
+        <a class="nav-link" href="http://192.168.199.80:4040/SQL/">SQL / DataFrame</a>
+      </li></ul>
+            <span class="navbar-text navbar-right d-none d-md-block">
+              <strong title="marioApp" class="text-nowrap">marioApp</strong>
+              <span class="text-nowrap">application UI</span>
+            </span>
+          </div>
+        </nav>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <h3 style="vertical-align: bottom; white-space: nowrap; overflow: hidden;
+                text-overflow: ellipsis;">
+                Spark Jobs
+                <sup>
+      (<a data-toggle="tooltip" data-placement="top" title="" data-original-title="A job is triggered by an action, like count() or saveAsTextFile(). Click on a job to see information about the stages of tasks inside it.">?</a>)
+    </sup>
+              </h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div>
+        <ul class="list-unstyled">
+          <li>
+
+            <strong>User:</strong>
+            mario
+          </li>
+          <li>
+            <strong>Total Uptime:</strong>
+            1.0 h
+          </li>
+          <li>
+            <strong>Scheduling Mode: </strong>
+            FIFO
+          </li>
+          
+          <li id="completed-summary">
+                <a href="http://192.168.199.80:4040/jobs/#completed"><strong>Completed Jobs:</strong></a>
+                23
+              </li>
+          
+        </ul>
+      </div><span class="expand-application-timeline">
+      <span class="expand-application-timeline-arrow arrow-open"></span>
+      <a data-toggle="tooltip" title="" data-placement="top" data-original-title="Shows when jobs started and ended and when executors joined or left. Drag to scroll.
+       Click Enable Zooming and use mouse wheel to zoom in/out.">
+        Event Timeline
+      </a>
+    </span><div id="application-timeline" class="">
+      
+      
+      <div class="control-panel">
+        <div id="application-timeline-zoom-lock">
+          <input type="checkbox">
+          <span>Enable zooming</span>
+        </div>
+      </div>
+    <div class="vis-timeline vis-bottom" style="touch-action: pan-y; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); visibility: visible; height: 296px; cursor: auto;"><div class="vis-panel vis-background" style="height: 294px; width: 2084px; left: 0px; top: 0px;"></div><div class="vis-panel vis-background vis-vertical" style="height: 294px; width: 1925px; left: 161px; top: 0px;"><div class="vis-axis" style="top: 254px; left: 0px;"><div class="vis-group"><div class="vis-item vis-dot executor added vis-readonly" style="left: 15.8686px; top: -4px;"></div><div class="vis-item vis-dot executor added vis-readonly" style="left: 39.8291px; top: -4px;"></div><div class="vis-item vis-dot executor added vis-readonly" style="left: 27.2949px; top: -4px;"></div></div><div class="vis-group"></div></div><div class="vis-time-axis vis-background"><div class="vis-grid vis-vertical vis-minor  vis-today  vis-odd" style="top: -1px; height: 277px; left: -55.0751px; width: 66.7423px;"></div><div class="vis-grid vis-vertical vis-minor  vis-today  vis-even" style="top: -1px; height: 277px; left: 11.6671px; width: 66.7423px;"></div><div class="vis-grid vis-vertical vis-minor  vis-today  vis-odd" style="top: -1px; left: 78.4094px; height: 277px; width: 66.7423px;"></div><div class="vis-grid vis-vertical vis-minor  vis-today  vis-even" style="top: -1px; height: 277px; left: 145.152px; width: 66.7423px;"></div><div class="vis-grid vis-vertical vis-minor  vis-today  vis-odd" style="top: -1px; height: 277px; left: 211.894px; width: 66.7423px;"></div><div class="vis-grid vis-vertical vis-major  vis-today  vis-even" style="top: -1px; height: 297px; left: 278.636px; width: 66.7423px;"></div><div class="vis-grid vis-vertical vis-minor  vis-today  vis-odd" style="top: -1px; height: 277px; left: 345.378px; width: 66.7423px;"></div><div class="vis-grid vis-vertical vis-minor  vis-today  vis-even" style="top: -1px; height: 277px; left: 412.121px; width: 66.7423px;"></div><div class="vis-grid vis-vertical vis-minor  vis-today  vis-odd" style="top: -1px; left: 478.863px; height: 277px; width: 66.7423px;"></div><div class="vis-grid vis-vertical vis-minor  vis-today  vis-even" style="top: -1px; height: 277px; left: 545.605px; width: 66.7423px;"></div><div class="vis-grid vis-vertical vis-minor  vis-today  vis-odd" style="top: -1px; height: 277px; left: 612.347px; width: 66.7423px;"></div><div class="vis-grid vis-vertical vis-major  vis-today  vis-even" style="top: -1px; height: 297px; left: 679.09px; width: 66.7423px;"></div><div class="vis-grid vis-vertical vis-minor  vis-today  vis-odd" style="top: -1px; left: 745.832px; height: 277px; width: 66.7423px;"></div><div class="vis-grid vis-vertical vis-minor  vis-today  vis-even" style="top: -1px; height: 277px; left: 812.574px; width: 66.7423px;"></div><div class="vis-grid vis-vertical vis-minor  vis-today  vis-odd" style="top: -1px; height: 277px; left: 879.316px; width: 66.7423px;"></div><div class="vis-grid vis-vertical vis-minor  vis-today  vis-even" style="top: -1px; height: 277px; left: 946.059px; width: 66.7423px;"></div><div class="vis-grid vis-vertical vis-minor  vis-today  vis-odd" style="top: -1px; left: 1012.8px; height: 277px; width: 66.7423px;"></div><div class="vis-grid vis-vertical vis-major  vis-today  vis-even" style="top: -1px; height: 297px; left: 1079.54px; width: 66.7423px;"></div><div class="vis-grid vis-vertical vis-minor  vis-today  vis-odd" style="top: -1px; height: 277px; left: 1146.29px; width: 66.7423px;"></div><div class="vis-grid vis-vertical vis-minor  vis-today  vis-even" style="top: -1px; height: 277px; left: 1213.03px; width: 66.7423px;"></div><div class="vis-grid vis-vertical vis-minor  vis-today  vis-odd" style="top: -1px; left: 1279.77px; height: 277px; width: 66.7423px;"></div><div class="vis-grid vis-vertical vis-minor  vis-today  vis-even" style="top: -1px; height: 277px; left: 1346.51px; width: 66.7423px;"></div><div class="vis-grid vis-vertical vis-minor  vis-today  vis-odd" style="top: -1px; height: 277px; left: 1413.25px; width: 66.7423px;"></div><div class="vis-grid vis-vertical vis-major  vis-today  vis-even" style="top: -1px; height: 297px; left: 1480px; width: 66.7423px;"></div><div class="vis-grid vis-vertical vis-minor  vis-today  vis-odd" style="top: -1px; height: 277px; left: 1546.74px; width: 66.7423px;"></div><div class="vis-grid vis-vertical vis-minor  vis-today  vis-even" style="top: -1px; left: 1613.48px; height: 277px; width: 66.7423px;"></div><div class="vis-grid vis-vertical vis-minor  vis-today  vis-odd" style="top: -1px; height: 277px; left: 1680.22px; width: 66.7423px;"></div><div class="vis-grid vis-vertical vis-minor  vis-today  vis-even" style="top: -1px; height: 277px; left: 1746.97px; width: 66.7423px;"></div><div class="vis-grid vis-vertical vis-minor  vis-today  vis-odd" style="top: -1px; height: 277px; left: 1813.71px; width: 66.7423px;"></div><div class="vis-grid vis-vertical vis-major  vis-today  vis-even" style="top: -1px; left: 1880.45px; height: 297px; width: 66.7423px;"></div></div></div><div class="vis-panel vis-background vis-horizontal" style="height: 255px; width: 2084px; left: 0px; top: -1px;"></div><div class="vis-panel vis-center" style="touch-action: pan-y; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); height: 255px; width: 1925px; left: 160px; top: -1px;"><div class="vis-content" style="left: 0px; top: 0px;"><div class="vis-itemset" style="height: 253px;"><div class="vis-background"><div class="vis-group" style="height: 0px;"><div style="visibility: hidden; position: absolute;"></div></div><div class="vis-group" style="height: 102px;"><div style="visibility: hidden; position: absolute;"></div><div class="vis-item vis-line executor added vis-readonly" style="left: 19.3686px; top: 97px; bottom: 0px;"></div><div class="vis-item vis-line executor added vis-readonly" style="left: 43.3291px; top: 63px; bottom: 0px;"></div><div class="vis-item vis-line executor added vis-readonly" style="left: 30.7949px; top: 29px; bottom: 0px;"></div></div><div class="vis-group" style="height: 151px;"><div style="visibility: hidden; position: absolute;"></div></div></div><div class="vis-foreground"><div class="vis-group" style="height: 102px;"><div class="vis-item vis-box executor added vis-readonly" style="left: 19.3686px; top: 73px;"><div class="vis-item-content"><div class="executor-event-content" data-toggle="tooltip" data-placement="top" data-title="Executor driver&lt;br&gt;Added at 2023/01/01 17:34:21" data-html="true" data-original-title="" title="">Executor driver added</div></div></div><div class="vis-item vis-box executor added vis-readonly" style="left: 43.3291px; top: 39px;"><div class="vis-item-content"><div class="executor-event-content" data-toggle="tooltip" data-placement="top" data-title="Executor 1&lt;br&gt;Added at 2023/01/01 17:34:24" data-html="true" data-original-title="" title="">Executor 1 added</div></div></div><div class="vis-item vis-box executor added vis-readonly" style="left: 30.7949px; top: 5px;"><div class="vis-item-content"><div class="executor-event-content" data-toggle="tooltip" data-placement="top" data-title="Executor 0&lt;br&gt;Added at 2023/01/01 17:34:22" data-html="true" data-original-title="" title="">Executor 0 added</div></div></div></div><div class="vis-group" style="height: 151px;"><div class="vis-item vis-range job application-timeline-object succeeded vis-readonly" style="left: 44.17px; width: 11.8395px; top: 107px;"><div class="vis-item-overflow"><div class="vis-item-content" style="left: 0px;"><div class="application-timeline-content" data-html="true" data-placement="top" data-toggle="tooltip" data-title="Listing leaf files and directories for 100 paths:hdfs://192.168.199.80:9000/user/mario/input_files/10minutenwerte_only_100/produkt_zehn_min_tu_19900101_19991231_03366.txt, ... (Job 0)&lt;br&gt;Status: SUCCEEDED&lt;br&gt;Submitted: 2023/01/01 17:34:24&lt;br&gt;Completed: 2023/01/01 17:34:26" data-original-title="" title="">Listing leaf files and directories for 100 paths:hdfs://192.168.199.80:9000/user/mario/input_files/10minutenwerte_only_100/produkt_zehn_min_tu_19900101_19991231_03366.txt, ... (Job 0)</div></div></div><div class="vis-item-visible-frame"></div></div><div class="vis-item vis-range job application-timeline-object succeeded vis-readonly" style="left: 75.1785px; width: 5.35216px; top: 107px;"><div class="vis-item-overflow"><div class="vis-item-content" style="left: 0px;"><div class="application-timeline-content" data-html="true" data-placement="top" data-toggle="tooltip" data-title="read all files from HDFS and print the schema (Job 1)&lt;br&gt;Status: SUCCEEDED&lt;br&gt;Submitted: 2023/01/01 17:34:29&lt;br&gt;Completed: 2023/01/01 17:34:30" data-original-title="" title="">read all files from HDFS and print the schema (Job 1)</div></div></div><div class="vis-item-visible-frame"></div></div><div class="vis-item vis-range job application-timeline-object succeeded vis-readonly" style="left: 81.3188px; width: 195.387px; top: 73px;"><div class="vis-item-overflow"><div class="vis-item-content" style="left: 0px;"><div class="application-timeline-content" data-html="true" data-placement="top" data-toggle="tooltip" data-title="read all files from HDFS and print the schema (Job 2)&lt;br&gt;Status: SUCCEEDED&lt;br&gt;Submitted: 2023/01/01 17:34:30&lt;br&gt;Completed: 2023/01/01 17:34:59" data-original-title="" title="">read all files from HDFS and print the schema (Job 2)</div></div></div><div class="vis-item-visible-frame"></div></div><div class="vis-item vis-range job application-timeline-object succeeded vis-readonly" style="left: 280.077px; width: 1.87489px; top: 107px;"><div class="vis-item-overflow"><div class="vis-item-content" style="left: 0px;"><div class="application-timeline-content" data-html="true" data-placement="top" data-toggle="tooltip" data-title="show 5 rows of df (Job 3)&lt;br&gt;Status: SUCCEEDED&lt;br&gt;Submitted: 2023/01/01 17:35:00&lt;br&gt;Completed: 2023/01/01 17:35:00" data-original-title="" title="">show 5 rows of df (Job 3)</div></div></div><div class="vis-item-visible-frame"></div></div><div class="vis-item vis-range job application-timeline-object succeeded vis-readonly" style="left: 286.031px; width: 1.48779px; top: 39px;"><div class="vis-item-overflow"><div class="vis-item-content" style="left: 0px;"><div class="application-timeline-content" data-html="true" data-placement="top" data-toggle="tooltip" data-title="show 5 rows of df (Job 4)&lt;br&gt;Status: SUCCEEDED&lt;br&gt;Submitted: 2023/01/01 17:35:01&lt;br&gt;Completed: 2023/01/01 17:35:01" data-original-title="" title="">show 5 rows of df (Job 4)</div></div></div><div class="vis-item-visible-frame"></div></div><div class="vis-item vis-range job application-timeline-object succeeded vis-readonly" style="left: 291.764px; width: 189.768px; top: 73px;"><div class="vis-item-overflow"><div class="vis-item-content" style="left: 0px;"><div class="application-timeline-content" data-html="true" data-placement="top" data-toggle="tooltip" data-title="group by (Job 5)&lt;br&gt;Status: SUCCEEDED&lt;br&gt;Submitted: 2023/01/01 17:35:01&lt;br&gt;Completed: 2023/01/01 17:35:30" data-original-title="" title="">group by (Job 5)</div></div></div><div class="vis-item-visible-frame"></div></div><div class="vis-item vis-range job application-timeline-object succeeded vis-readonly" style="left: 482.159px; width: 5.54571px; top: 107px;"><div class="vis-item-overflow"><div class="vis-item-content" style="left: 0px;"><div class="application-timeline-content" data-html="true" data-placement="top" data-toggle="tooltip" data-title="group by (Job 6)&lt;br&gt;Status: SUCCEEDED&lt;br&gt;Submitted: 2023/01/01 17:35:30&lt;br&gt;Completed: 2023/01/01 17:35:31" data-original-title="" title="">group by (Job 6)</div></div></div><div class="vis-item-visible-frame"></div></div><div class="vis-item vis-range job application-timeline-object succeeded vis-readonly" style="left: 489.381px; width: 1.74141px; top: 39px;"><div class="vis-item-overflow"><div class="vis-item-content" style="left: 0px;"><div class="application-timeline-content" data-html="true" data-placement="top" data-toggle="tooltip" data-title="filter only june and december (Job 7)&lt;br&gt;Status: SUCCEEDED&lt;br&gt;Submitted: 2023/01/01 17:35:31&lt;br&gt;Completed: 2023/01/01 17:35:31" data-original-title="" title="">filter only june and december (Job 7)</div></div></div><div class="vis-item-visible-frame"></div></div><div class="vis-item vis-range job application-timeline-object succeeded vis-readonly" style="left: 492.471px; width: 2.03507px; top: 73px;"><div class="vis-item-overflow"><div class="vis-item-content" style="left: 0px;"><div class="application-timeline-content" data-html="true" data-placement="top" data-toggle="tooltip" data-title="convert timestamp into month and year (Job 8)&lt;br&gt;Status: SUCCEEDED&lt;br&gt;Submitted: 2023/01/01 17:35:31&lt;br&gt;Completed: 2023/01/01 17:35:32" data-original-title="" title="">convert timestamp into month and year (Job 8)</div></div></div><div class="vis-item-visible-frame"></div></div><div class="vis-item vis-range job application-timeline-object succeeded vis-readonly" style="left: 497.617px; width: 263.511px; top: 5px;"><div class="vis-item-overflow"><div class="vis-item-content" style="left: 0px;"><div class="application-timeline-content" data-html="true" data-placement="top" data-toggle="tooltip" data-title="calculate average temperature for each year+month+stations_id (Job 9)&lt;br&gt;Status: SUCCEEDED&lt;br&gt;Submitted: 2023/01/01 17:35:32&lt;br&gt;Completed: 2023/01/01 17:36:12" data-original-title="" title="">calculate average temperature for each year+month+stations_id (Job 9)</div></div></div><div class="vis-item-visible-frame"></div></div><div class="vis-item vis-range job application-timeline-object succeeded vis-readonly" style="left: 761.182px; width: 1.87489px; top: 107px;"><div class="vis-item-overflow"><div class="vis-item-content" style="left: 0px;"><div class="application-timeline-content" data-html="true" data-placement="top" data-toggle="tooltip" data-title="calculate average temperature for each year+month+stations_id (Job 10)&lt;br&gt;Status: SUCCEEDED&lt;br&gt;Submitted: 2023/01/01 17:36:12&lt;br&gt;Completed: 2023/01/01 17:36:12" data-original-title="" title="">calculate average temperature for each year+month+stations_id (Job 10)</div></div></div><div class="vis-item-visible-frame"></div></div><div class="vis-item vis-range job application-timeline-object succeeded vis-readonly" style="left: 765.38px; width: 250.55px; top: 73px;"><div class="vis-item-overflow"><div class="vis-item-content" style="left: 0px;"><div class="application-timeline-content" data-html="true" data-placement="top" data-toggle="tooltip" data-title="new dataframe with only december (Job 11)&lt;br&gt;Status: SUCCEEDED&lt;br&gt;Submitted: 2023/01/01 17:36:12&lt;br&gt;Completed: 2023/01/01 17:36:50" data-original-title="" title="">new dataframe with only december (Job 11)</div></div></div><div class="vis-item-visible-frame"></div></div><div class="vis-item vis-range job application-timeline-object succeeded vis-readonly" style="left: 1015.69px; width: 1.07398px; top: 107px;"><div class="vis-item-overflow"><div class="vis-item-content" style="left: 0px;"><div class="application-timeline-content" data-html="true" data-placement="top" data-toggle="tooltip" data-title="new dataframe with only december (Job 12)&lt;br&gt;Status: SUCCEEDED&lt;br&gt;Submitted: 2023/01/01 17:36:50&lt;br&gt;Completed: 2023/01/01 17:36:50" data-original-title="" title="">new dataframe with only december (Job 12)</div></div></div><div class="vis-item-visible-frame"></div></div><div class="vis-item vis-range job application-timeline-object succeeded vis-readonly" style="left: 1018.26px; width: 247.54px; top: 39px;"><div class="vis-item-overflow"><div class="vis-item-content" style="left: 0px;"><div class="application-timeline-content" data-html="true" data-placement="top" data-toggle="tooltip" data-title="adding additional month and year columns (Job 13)&lt;br&gt;Status: SUCCEEDED&lt;br&gt;Submitted: 2023/01/01 17:36:50&lt;br&gt;Completed: 2023/01/01 17:37:27" data-original-title="" title="">adding additional month and year columns (Job 13)</div></div></div><div class="vis-item-visible-frame"></div></div><div class="vis-item vis-range job application-timeline-object succeeded vis-readonly" style="left: 1265.71px; width: 1.59457px; top: 107px;"><div class="vis-item-overflow"><div class="vis-item-content" style="left: 0px;"><div class="application-timeline-content" data-html="true" data-placement="top" data-toggle="tooltip" data-title="adding additional month and year columns (Job 14)&lt;br&gt;Status: SUCCEEDED&lt;br&gt;Submitted: 2023/01/01 17:37:27&lt;br&gt;Completed: 2023/01/01 17:37:27" data-original-title="" title="">adding additional month and year columns (Job 14)</div></div></div><div class="vis-item-visible-frame"></div></div><div class="vis-item vis-range job application-timeline-object succeeded vis-readonly" style="left: 1272.57px; width: 228.952px; top: 73px;"><div class="vis-item-overflow"><div class="vis-item-content" style="left: 0px;"><div class="application-timeline-content" data-html="true" data-placement="top" data-toggle="tooltip" data-title="join two dataframes (Job 16)&lt;br&gt;Status: SUCCEEDED&lt;br&gt;Submitted: 2023/01/01 17:37:28&lt;br&gt;Completed: 2023/01/01 17:38:03" data-original-title="" title="">join two dataframes (Job 16)</div></div></div><div class="vis-item-visible-frame"></div></div><div class="vis-item vis-range job application-timeline-object succeeded vis-readonly" style="left: 1502.93px; width: 3.34989px; top: 107px;"><div class="vis-item-overflow"><div class="vis-item-content" style="left: 0px;"><div class="application-timeline-content" data-html="true" data-placement="top" data-toggle="tooltip" data-title="broadcast exchange (runId 28e647e3-bac5-406b-a672-5cdac5ae59d9) (Job 17)&lt;br&gt;Status: SUCCEEDED&lt;br&gt;Submitted: 2023/01/01 17:38:03&lt;br&gt;Completed: 2023/01/01 17:38:03" data-original-title="" title="">broadcast exchange (runId 28e647e3-bac5-406b-a672-5cdac5ae59d9) (Job 17)</div></div></div><div class="vis-item-visible-frame"></div></div><div class="vis-item vis-range job application-timeline-object succeeded vis-readonly" style="left: 1271.11px; width: 280.237px; top: 5px;"><div class="vis-item-overflow"><div class="vis-item-content" style="left: 0px;"><div class="application-timeline-content" data-html="true" data-placement="top" data-toggle="tooltip" data-title="join two dataframes (Job 15)&lt;br&gt;Status: SUCCEEDED&lt;br&gt;Submitted: 2023/01/01 17:37:28&lt;br&gt;Completed: 2023/01/01 17:38:10" data-original-title="" title="">join two dataframes (Job 15)</div></div></div><div class="vis-item-visible-frame"></div></div><div class="vis-item vis-range job application-timeline-object succeeded vis-readonly" style="left: 1551.54px; width: 2.33541px; top: 107px;"><div class="vis-item-overflow"><div class="vis-item-content" style="left: 0px;"><div class="application-timeline-content" data-html="true" data-placement="top" data-toggle="tooltip" data-title="join two dataframes (Job 18)&lt;br&gt;Status: SUCCEEDED&lt;br&gt;Submitted: 2023/01/01 17:38:10&lt;br&gt;Completed: 2023/01/01 17:38:10" data-original-title="" title="">join two dataframes (Job 18)</div></div></div><div class="vis-item-visible-frame"></div></div><div class="vis-item vis-range job application-timeline-object succeeded vis-readonly" style="left: 1556.78px; width: 234.098px; top: 73px;"><div class="vis-item-overflow"><div class="vis-item-content" style="left: 0px;"><div class="application-timeline-content" data-html="true" data-placement="top" data-toggle="tooltip" data-title="calculate correlation (Job 20)&lt;br&gt;Status: SUCCEEDED&lt;br&gt;Submitted: 2023/01/01 17:38:11&lt;br&gt;Completed: 2023/01/01 17:38:46" data-original-title="" title="">calculate correlation (Job 20)</div></div></div><div class="vis-item-visible-frame"></div></div><div class="vis-item vis-range job application-timeline-object succeeded vis-readonly" style="left: 1556.02px; width: 300.326px; top: 39px;"><div class="vis-item-overflow"><div class="vis-item-content" style="left: 0px;"><div class="application-timeline-content" data-html="true" data-placement="top" data-toggle="tooltip" data-title="calculate correlation (Job 19)&lt;br&gt;Status: SUCCEEDED&lt;br&gt;Submitted: 2023/01/01 17:38:11&lt;br&gt;Completed: 2023/01/01 17:38:56" data-original-title="" title="">calculate correlation (Job 19)</div></div></div><div class="vis-item-visible-frame"></div></div><div class="vis-item vis-range job application-timeline-object succeeded vis-readonly" style="left: 1791.52px; width: 1.77478px; top: 107px;"><div class="vis-item-overflow"><div class="vis-item-content" style="left: 0px;"><div class="application-timeline-content" data-html="true" data-placement="top" data-toggle="tooltip" data-title="broadcast exchange (runId da55b22c-f0ec-4be6-8f85-30a23c064691) (Job 21)&lt;br&gt;Status: SUCCEEDED&lt;br&gt;Submitted: 2023/01/01 17:38:46&lt;br&gt;Completed: 2023/01/01 17:38:46" data-original-title="" title="">broadcast exchange (runId da55b22c-f0ec-4be6-8f85-30a23c064691) (Job 21)</div></div></div><div class="vis-item-visible-frame"></div></div><div class="vis-item vis-range job application-timeline-object succeeded vis-readonly" style="left: 1856.46px; width: 3.37659px; top: 107px;"><div class="vis-item-overflow"><div class="vis-item-content" style="left: 0px;"><div class="application-timeline-content" data-html="true" data-placement="top" data-toggle="tooltip" data-title="calculate correlation (Job 22)&lt;br&gt;Status: SUCCEEDED&lt;br&gt;Submitted: 2023/01/01 17:38:56&lt;br&gt;Completed: 2023/01/01 17:38:56" data-original-title="" title="">calculate correlation (Job 22)</div></div></div><div class="vis-item-visible-frame"></div></div></div></div></div></div><div class="vis-shadow vis-top" style="visibility: hidden;"></div><div class="vis-shadow vis-bottom" style="visibility: hidden;"></div></div><div class="vis-panel vis-left" style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); height: 255px; left: 0px; top: -1px;"><div class="vis-content" style="left: 0px; top: 0px;"><div class="vis-labelset"><div class="vis-label" title="" style="height: 102px;"><div class="vis-inner"><div>Executors</div><div class="legend-area"><svg width="150px" height="55px">      <rect class="executor-added-legend" x="5px" y="5px" width="20px" height="15px" rx="2px" ry="2px"></rect>      <text x="35px" y="17px">Added</text>      <rect class="executor-removed-legend" x="5px" y="30px" width="20px" height="15px" rx="2px" ry="2px"></rect>      <text x="35px" y="42px">Removed</text>    </svg></div></div></div><div class="vis-label" title="" style="height: 151px;"><div class="vis-inner"><div>Jobs</div><div class="legend-area"><svg width="150px" height="85px">      <rect class="succeeded-job-legend" x="5px" y="5px" width="20px" height="15px" rx="2px" ry="2px"></rect>      <text x="35px" y="17px">Succeeded</text>      <rect class="failed-job-legend" x="5px" y="30px" width="20px" height="15px" rx="2px" ry="2px"></rect>      <text x="35px" y="42px">Failed</text>      <rect class="running-job-legend" x="5px" y="55px" width="20px" height="15px" rx="2px" ry="2px"></rect>      <text x="35px" y="67px">Running</text>    </svg></div></div></div></div></div><div class="vis-shadow vis-top" style="visibility: hidden;"></div><div class="vis-shadow vis-bottom" style="visibility: hidden;"></div></div><div class="vis-panel vis-right" style="height: 255px; left: 2085px; top: -1px;"><div class="vis-content" style="left: 0px; top: 0px;"></div><div class="vis-shadow vis-top" style="visibility: hidden;"></div><div class="vis-shadow vis-bottom" style="visibility: hidden;"></div></div><div class="vis-panel vis-top" style="width: 1925px; left: 160px; top: 0px;"></div><div class="vis-panel vis-bottom" style="width: 1925px; left: 160px; top: 254px;"><div class="vis-time-axis vis-foreground" style="height: 40px;"><div class="vis-text vis-minor vis-measure" style="position: absolute;">0</div><div class="vis-text vis-major vis-measure" style="position: absolute;">0</div><div class="vis-text vis-minor  vis-today  vis-odd" style="top: 0px; left: -54.5751px; width: 66.7423px;">10</div><div class="vis-text vis-minor  vis-today  vis-even" style="top: 0px; left: 12.1671px; width: 66.7423px;">20</div><div class="vis-text vis-minor  vis-today  vis-odd" style="top: 0px; left: 78.9094px; width: 66.7423px;">30</div><div class="vis-text vis-major  vis-today  vis-even" style="top: 20px; left: 279.136px;"><div>1 January 17:35</div></div><div class="vis-text vis-minor  vis-today  vis-even" style="top: 0px; left: 145.652px; width: 66.7423px;">40</div><div class="vis-text vis-minor  vis-today  vis-odd" style="top: 0px; left: 212.394px; width: 66.7423px;">50</div><div class="vis-text vis-minor  vis-today  vis-even" style="top: 0px; left: 279.136px; width: 66.7423px;">0</div><div class="vis-text vis-minor  vis-today  vis-odd" style="top: 0px; left: 345.878px; width: 66.7423px;">10</div><div class="vis-text vis-minor  vis-today  vis-even" style="top: 0px; left: 412.621px; width: 66.7423px;">20</div><div class="vis-text vis-minor  vis-today  vis-odd" style="top: 0px; left: 479.363px; width: 66.7423px;">30</div><div class="vis-text vis-minor  vis-today  vis-even" style="top: 0px; left: 546.105px; width: 66.7423px;">40</div><div class="vis-text vis-minor  vis-today  vis-odd" style="top: 0px; left: 612.847px; width: 66.7423px;">50</div><div class="vis-text vis-major  vis-today  vis-even" style="top: 20px; left: 679.59px;"><div>1 January 17:36</div></div><div class="vis-text vis-minor  vis-today  vis-even" style="top: 0px; left: 679.59px; width: 66.7423px;">0</div><div class="vis-text vis-minor  vis-today  vis-odd" style="top: 0px; left: 746.332px; width: 66.7423px;">10</div><div class="vis-text vis-major  vis-today  vis-even" style="top: 20px; left: 1080.04px;"><div>1 January 17:37</div></div><div class="vis-text vis-minor  vis-today  vis-even" style="top: 0px; left: 813.074px; width: 66.7423px;">20</div><div class="vis-text vis-minor  vis-today  vis-odd" style="top: 0px; left: 879.816px; width: 66.7423px;">30</div><div class="vis-text vis-minor  vis-today  vis-even" style="top: 0px; left: 946.559px; width: 66.7423px;">40</div><div class="vis-text vis-minor  vis-today  vis-odd" style="top: 0px; left: 1013.3px; width: 66.7423px;">50</div><div class="vis-text vis-major  vis-today  vis-even" style="top: 20px; left: 1480.5px;"><div>1 January 17:38</div></div><div class="vis-text vis-minor  vis-today  vis-even" style="top: 0px; left: 1080.04px; width: 66.7423px;">0</div><div class="vis-text vis-minor  vis-today  vis-odd" style="top: 0px; left: 1146.79px; width: 66.7423px;">10</div><div class="vis-text vis-minor  vis-today  vis-even" style="top: 0px; left: 1213.53px; width: 66.7423px;">20</div><div class="vis-text vis-minor  vis-today  vis-odd" style="top: 0px; left: 1280.27px; width: 66.7423px;">30</div><div class="vis-text vis-major  vis-today  vis-even" style="top: 20px; left: 1880.95px;"><div>1 January 17:39</div></div><div class="vis-text vis-minor  vis-today  vis-even" style="top: 0px; left: 1347.01px; width: 66.7423px;">40</div><div class="vis-text vis-minor  vis-today  vis-odd" style="top: 0px; left: 1413.75px; width: 66.7423px;">50</div><div class="vis-text vis-minor  vis-today  vis-even" style="top: 0px; left: 1480.5px; width: 66.7423px;">0</div><div class="vis-text vis-minor  vis-today  vis-odd" style="top: 0px; left: 1547.24px; width: 66.7423px;">10</div><div class="vis-text vis-minor  vis-today  vis-even" style="top: 0px; left: 1613.98px; width: 66.7423px;">20</div><div class="vis-text vis-minor  vis-today  vis-odd" style="top: 0px; left: 1680.72px; width: 66.7423px;">30</div><div class="vis-text vis-minor  vis-today  vis-even" style="top: 0px; left: 1747.47px; width: 66.7423px;">40</div><div class="vis-text vis-minor  vis-today  vis-odd" style="top: 0px; left: 1814.21px; width: 66.7423px;">50</div><div class="vis-text vis-minor  vis-today  vis-even" style="top: 0px; left: 1880.95px; width: 66.7423px;">0</div><div class="vis-text vis-major  vis-today  vis-even" style="top: 20px; left: 0px;"><div>1 January 17:34</div></div></div></div><div class="vis-rolling-mode-btn" style="visibility: hidden;"></div></div></div><script type="text/javascript">
+      drawApplicationTimeline(
+[
+  {
+    'id': 'executors',
+    'content': '<div>Executors</div><div class="legend-area"><svg width="150px" height="55px">      <rect class="executor-added-legend" x="5px" y="5px" width="20px" height="15px" rx="2px" ry="2px"></rect>      <text x="35px" y="17px">Added</text>      <rect class="executor-removed-legend" x="5px" y="30px" width="20px" height="15px" rx="2px" ry="2px"></rect>      <text x="35px" y="42px">Removed</text>    </svg></div>',
+  },
+  {
+    'id': 'jobs',
+    'content': '<div>Jobs</div><div class="legend-area"><svg width="150px" height="85px">      <rect class="succeeded-job-legend" x="5px" y="5px" width="20px" height="15px" rx="2px" ry="2px"></rect>      <text x="35px" y="17px">Succeeded</text>      <rect class="failed-job-legend" x="5px" y="30px" width="20px" height="15px" rx="2px" ry="2px"></rect>      <text x="35px" y="42px">Failed</text>      <rect class="running-job-legend" x="5px" y="55px" width="20px" height="15px" rx="2px" ry="2px"></rect>      <text x="35px" y="67px">Running</text>    </svg></div>',
+  }
+]
+        ,[
+{
+  'className': 'job application-timeline-object succeeded',
+  'group': 'jobs',
+  'start': new Date(1672590864795),
+  'end': new Date(1672590866494),
+  'content': '<div class="application-timeline-content"' +
+     'data-html="true" data-placement="top" data-toggle="tooltip"' +
+     'data-title="Listing leaf files and directories for 100 paths:hdfs:\/\/192.168.199.80:9000\/user\/mario\/input_files\/10minutenwerte_only_100\/produkt_zehn_min_tu_19900101_19991231_03366.txt, ... (Job 0)<br>' +
+     'Status: SUCCEEDED<br>' +
+     'Submitted: 2023/01/01 17:34:24' +
+     '<br>Completed: 2023/01/01 17:34:26">' +
+    'Listing leaf files and directories for 100 paths:hdfs:\/\/192.168.199.80:9000\/user\/mario\/input_files\/10minutenwerte_only_100\/produkt_zehn_min_tu_19900101_19991231_03366.txt, ... (Job 0)</div>'
+}
+         ,
+{
+  'className': 'job application-timeline-object succeeded',
+  'group': 'jobs',
+  'start': new Date(1672590869441),
+  'end': new Date(1672590870168),
+  'content': '<div class="application-timeline-content"' +
+     'data-html="true" data-placement="top" data-toggle="tooltip"' +
+     'data-title="read all files from HDFS and print the schema (Job 1)<br>' +
+     'Status: SUCCEEDED<br>' +
+     'Submitted: 2023/01/01 17:34:29' +
+     '<br>Completed: 2023/01/01 17:34:30">' +
+    'read all files from HDFS and print the schema (Job 1)</div>'
+}
+         ,
+{
+  'className': 'job application-timeline-object succeeded',
+  'group': 'jobs',
+  'start': new Date(1672590870361),
+  'end': new Date(1672590899561),
+  'content': '<div class="application-timeline-content"' +
+     'data-html="true" data-placement="top" data-toggle="tooltip"' +
+     'data-title="read all files from HDFS and print the schema (Job 2)<br>' +
+     'Status: SUCCEEDED<br>' +
+     'Submitted: 2023/01/01 17:34:30' +
+     '<br>Completed: 2023/01/01 17:34:59">' +
+    'read all files from HDFS and print the schema (Job 2)</div>'
+}
+         ,
+{
+  'className': 'job application-timeline-object succeeded',
+  'group': 'jobs',
+  'start': new Date(1672590900141),
+  'end': new Date(1672590900347),
+  'content': '<div class="application-timeline-content"' +
+     'data-html="true" data-placement="top" data-toggle="tooltip"' +
+     'data-title="show 5 rows of df (Job 3)<br>' +
+     'Status: SUCCEEDED<br>' +
+     'Submitted: 2023/01/01 17:35:00' +
+     '<br>Completed: 2023/01/01 17:35:00">' +
+    'show 5 rows of df (Job 3)</div>'
+}
+         ,
+{
+  'className': 'job application-timeline-object succeeded',
+  'group': 'jobs',
+  'start': new Date(1672590901033),
+  'end': new Date(1672590901181),
+  'content': '<div class="application-timeline-content"' +
+     'data-html="true" data-placement="top" data-toggle="tooltip"' +
+     'data-title="show 5 rows of df (Job 4)<br>' +
+     'Status: SUCCEEDED<br>' +
+     'Submitted: 2023/01/01 17:35:01' +
+     '<br>Completed: 2023/01/01 17:35:01">' +
+    'show 5 rows of df (Job 4)</div>'
+}
+         ,
+{
+  'className': 'job application-timeline-object succeeded',
+  'group': 'jobs',
+  'start': new Date(1672590901892),
+  'end': new Date(1672590930250),
+  'content': '<div class="application-timeline-content"' +
+     'data-html="true" data-placement="top" data-toggle="tooltip"' +
+     'data-title="group by (Job 5)<br>' +
+     'Status: SUCCEEDED<br>' +
+     'Submitted: 2023/01/01 17:35:01' +
+     '<br>Completed: 2023/01/01 17:35:30">' +
+    'group by (Job 5)</div>'
+}
+         ,
+{
+  'className': 'job application-timeline-object succeeded',
+  'group': 'jobs',
+  'start': new Date(1672590930419),
+  'end': new Date(1672590931175),
+  'content': '<div class="application-timeline-content"' +
+     'data-html="true" data-placement="top" data-toggle="tooltip"' +
+     'data-title="group by (Job 6)<br>' +
+     'Status: SUCCEEDED<br>' +
+     'Submitted: 2023/01/01 17:35:30' +
+     '<br>Completed: 2023/01/01 17:35:31">' +
+    'group by (Job 6)</div>'
+}
+         ,
+{
+  'className': 'job application-timeline-object succeeded',
+  'group': 'jobs',
+  'start': new Date(1672590931501),
+  'end': new Date(1672590931687),
+  'content': '<div class="application-timeline-content"' +
+     'data-html="true" data-placement="top" data-toggle="tooltip"' +
+     'data-title="filter only june and december (Job 7)<br>' +
+     'Status: SUCCEEDED<br>' +
+     'Submitted: 2023/01/01 17:35:31' +
+     '<br>Completed: 2023/01/01 17:35:31">' +
+    'filter only june and december (Job 7)</div>'
+}
+         ,
+{
+  'className': 'job application-timeline-object succeeded',
+  'group': 'jobs',
+  'start': new Date(1672590931964),
+  'end': new Date(1672590932194),
+  'content': '<div class="application-timeline-content"' +
+     'data-html="true" data-placement="top" data-toggle="tooltip"' +
+     'data-title="convert timestamp into month and year (Job 8)<br>' +
+     'Status: SUCCEEDED<br>' +
+     'Submitted: 2023/01/01 17:35:31' +
+     '<br>Completed: 2023/01/01 17:35:32">' +
+    'convert timestamp into month and year (Job 8)</div>'
+}
+         ,
+{
+  'className': 'job application-timeline-object succeeded',
+  'group': 'jobs',
+  'start': new Date(1672590932735),
+  'end': new Date(1672590972142),
+  'content': '<div class="application-timeline-content"' +
+     'data-html="true" data-placement="top" data-toggle="tooltip"' +
+     'data-title="calculate average temperature for each year+month+stations_id (Job 9)<br>' +
+     'Status: SUCCEEDED<br>' +
+     'Submitted: 2023/01/01 17:35:32' +
+     '<br>Completed: 2023/01/01 17:36:12">' +
+    'calculate average temperature for each year+month+stations_id (Job 9)</div>'
+}
+         ,
+{
+  'className': 'job application-timeline-object succeeded',
+  'group': 'jobs',
+  'start': new Date(1672590972225),
+  'end': new Date(1672590972431),
+  'content': '<div class="application-timeline-content"' +
+     'data-html="true" data-placement="top" data-toggle="tooltip"' +
+     'data-title="calculate average temperature for each year+month+stations_id (Job 10)<br>' +
+     'Status: SUCCEEDED<br>' +
+     'Submitted: 2023/01/01 17:36:12' +
+     '<br>Completed: 2023/01/01 17:36:12">' +
+    'calculate average temperature for each year+month+stations_id (Job 10)</div>'
+}
+         ,
+{
+  'className': 'job application-timeline-object succeeded',
+  'group': 'jobs',
+  'start': new Date(1672590972854),
+  'end': new Date(1672591010319),
+  'content': '<div class="application-timeline-content"' +
+     'data-html="true" data-placement="top" data-toggle="tooltip"' +
+     'data-title="new dataframe with only december (Job 11)<br>' +
+     'Status: SUCCEEDED<br>' +
+     'Submitted: 2023/01/01 17:36:12' +
+     '<br>Completed: 2023/01/01 17:36:50">' +
+    'new dataframe with only december (Job 11)</div>'
+}
+         ,
+{
+  'className': 'job application-timeline-object succeeded',
+  'group': 'jobs',
+  'start': new Date(1672591010358),
+  'end': new Date(1672591010444),
+  'content': '<div class="application-timeline-content"' +
+     'data-html="true" data-placement="top" data-toggle="tooltip"' +
+     'data-title="new dataframe with only december (Job 12)<br>' +
+     'Status: SUCCEEDED<br>' +
+     'Submitted: 2023/01/01 17:36:50' +
+     '<br>Completed: 2023/01/01 17:36:50">' +
+    'new dataframe with only december (Job 12)</div>'
+}
+         ,
+{
+  'className': 'job application-timeline-object succeeded',
+  'group': 'jobs',
+  'start': new Date(1672591010743),
+  'end': new Date(1672591047757),
+  'content': '<div class="application-timeline-content"' +
+     'data-html="true" data-placement="top" data-toggle="tooltip"' +
+     'data-title="adding additional month and year columns (Job 13)<br>' +
+     'Status: SUCCEEDED<br>' +
+     'Submitted: 2023/01/01 17:36:50' +
+     '<br>Completed: 2023/01/01 17:37:27">' +
+    'adding additional month and year columns (Job 13)</div>'
+}
+         ,
+{
+  'className': 'job application-timeline-object succeeded',
+  'group': 'jobs',
+  'start': new Date(1672591047819),
+  'end': new Date(1672591047983),
+  'content': '<div class="application-timeline-content"' +
+     'data-html="true" data-placement="top" data-toggle="tooltip"' +
+     'data-title="adding additional month and year columns (Job 14)<br>' +
+     'Status: SUCCEEDED<br>' +
+     'Submitted: 2023/01/01 17:37:27' +
+     '<br>Completed: 2023/01/01 17:37:27">' +
+    'adding additional month and year columns (Job 14)</div>'
+}
+         ,
+{
+  'className': 'job application-timeline-object succeeded',
+  'group': 'jobs',
+  'start': new Date(1672591048847),
+  'end': new Date(1672591083076),
+  'content': '<div class="application-timeline-content"' +
+     'data-html="true" data-placement="top" data-toggle="tooltip"' +
+     'data-title="join two dataframes (Job 16)<br>' +
+     'Status: SUCCEEDED<br>' +
+     'Submitted: 2023/01/01 17:37:28' +
+     '<br>Completed: 2023/01/01 17:38:03">' +
+    'join two dataframes (Job 16)</div>'
+}
+         ,
+{
+  'className': 'job application-timeline-object succeeded',
+  'group': 'jobs',
+  'start': new Date(1672591083361),
+  'end': new Date(1672591083788),
+  'content': '<div class="application-timeline-content"' +
+     'data-html="true" data-placement="top" data-toggle="tooltip"' +
+     'data-title="broadcast exchange (runId 28e647e3-bac5-406b-a672-5cdac5ae59d9) (Job 17)<br>' +
+     'Status: SUCCEEDED<br>' +
+     'Submitted: 2023/01/01 17:38:03' +
+     '<br>Completed: 2023/01/01 17:38:03">' +
+    'broadcast exchange (runId 28e647e3-bac5-406b-a672-5cdac5ae59d9) (Job 17)</div>'
+}
+         ,
+{
+  'className': 'job application-timeline-object succeeded',
+  'group': 'jobs',
+  'start': new Date(1672591048627),
+  'end': new Date(1672591090540),
+  'content': '<div class="application-timeline-content"' +
+     'data-html="true" data-placement="top" data-toggle="tooltip"' +
+     'data-title="join two dataframes (Job 15)<br>' +
+     'Status: SUCCEEDED<br>' +
+     'Submitted: 2023/01/01 17:37:28' +
+     '<br>Completed: 2023/01/01 17:38:10">' +
+    'join two dataframes (Job 15)</div>'
+}
+         ,
+{
+  'className': 'job application-timeline-object succeeded',
+  'group': 'jobs',
+  'start': new Date(1672591090644),
+  'end': new Date(1672591090919),
+  'content': '<div class="application-timeline-content"' +
+     'data-html="true" data-placement="top" data-toggle="tooltip"' +
+     'data-title="join two dataframes (Job 18)<br>' +
+     'Status: SUCCEEDED<br>' +
+     'Submitted: 2023/01/01 17:38:10' +
+     '<br>Completed: 2023/01/01 17:38:10">' +
+    'join two dataframes (Job 18)</div>'
+}
+         ,
+{
+  'className': 'job application-timeline-object succeeded',
+  'group': 'jobs',
+  'start': new Date(1672591091429),
+  'end': new Date(1672591126429),
+  'content': '<div class="application-timeline-content"' +
+     'data-html="true" data-placement="top" data-toggle="tooltip"' +
+     'data-title="calculate correlation (Job 20)<br>' +
+     'Status: SUCCEEDED<br>' +
+     'Submitted: 2023/01/01 17:38:11' +
+     '<br>Completed: 2023/01/01 17:38:46">' +
+    'calculate correlation (Job 20)</div>'
+}
+         ,
+{
+  'className': 'job application-timeline-object succeeded',
+  'group': 'jobs',
+  'start': new Date(1672591126601),
+  'end': new Date(1672591126792),
+  'content': '<div class="application-timeline-content"' +
+     'data-html="true" data-placement="top" data-toggle="tooltip"' +
+     'data-title="broadcast exchange (runId da55b22c-f0ec-4be6-8f85-30a23c064691) (Job 21)<br>' +
+     'Status: SUCCEEDED<br>' +
+     'Submitted: 2023/01/01 17:38:46' +
+     '<br>Completed: 2023/01/01 17:38:46">' +
+    'broadcast exchange (runId da55b22c-f0ec-4be6-8f85-30a23c064691) (Job 21)</div>'
+}
+         ,
+{
+  'className': 'job application-timeline-object succeeded',
+  'group': 'jobs',
+  'start': new Date(1672591091316),
+  'end': new Date(1672591136239),
+  'content': '<div class="application-timeline-content"' +
+     'data-html="true" data-placement="top" data-toggle="tooltip"' +
+     'data-title="calculate correlation (Job 19)<br>' +
+     'Status: SUCCEEDED<br>' +
+     'Submitted: 2023/01/01 17:38:11' +
+     '<br>Completed: 2023/01/01 17:38:56">' +
+    'calculate correlation (Job 19)</div>'
+}
+         ,
+{
+  'className': 'job application-timeline-object succeeded',
+  'group': 'jobs',
+  'start': new Date(1672591136330),
+  'end': new Date(1672591136761),
+  'content': '<div class="application-timeline-content"' +
+     'data-html="true" data-placement="top" data-toggle="tooltip"' +
+     'data-title="calculate correlation (Job 22)<br>' +
+     'Status: SUCCEEDED<br>' +
+     'Submitted: 2023/01/01 17:38:56' +
+     '<br>Completed: 2023/01/01 17:38:56">' +
+    'calculate correlation (Job 22)</div>'
+}
+         ,
+{
+  'className': 'executor added',
+  'group': 'executors',
+  'start': new Date(1672590861079),
+  'content': '<div class="executor-event-content"' +
+    'data-toggle="tooltip" data-placement="top"' +
+    'data-title="Executor driver<br>' +
+    'Added at 2023/01/01 17:34:21"' +
+    'data-html="true">Executor driver added</div>'
+}
+         ,
+{
+  'className': 'executor added',
+  'group': 'executors',
+  'start': new Date(1672590864669),
+  'content': '<div class="executor-event-content"' +
+    'data-toggle="tooltip" data-placement="top"' +
+    'data-title="Executor 1<br>' +
+    'Added at 2023/01/01 17:34:24"' +
+    'data-html="true">Executor 1 added</div>'
+}
+         ,
+{
+  'className': 'executor added',
+  'group': 'executors',
+  'start': new Date(1672590862791),
+  'content': '<div class="executor-event-content"' +
+    'data-toggle="tooltip" data-placement="top"' +
+    'data-title="Executor 0<br>' +
+    'Added at 2023/01/01 17:34:22"' +
+    'data-html="true">Executor 0 added</div>'
+}
+         ,
+{
+  'className': 'executor removed',
+  'group': 'executors',
+  'start': new Date(1672591435512),
+  'content': '<div class="executor-event-content"' +
+    'data-toggle="tooltip" data-placement="top"' +
+    'data-title="Executor 0<br>' +
+    'Removed at 2023/01/01 17:43:55' +
+    '<br>Reason: worker lost"' +
+    'data-html="true">Executor 0 removed</div>'
+}
+           ], 1672590859854, 60);
+    </script><span id="completed" class="collapse-aggregated-completedJobs collapse-table" onclick="collapseTable(&#39;collapse-aggregated-completedJobs&#39;,&#39;aggregated-completedJobs&#39;)">
+          <h4>
+            <span class="collapse-table-arrow arrow-open"></span>
+            <a>Completed Jobs (23)</a>
+          </h4>
+        </span><div class="aggregated-completedJobs collapsible-table">
+          <div>
+        <div>
+      <div>
+        <form id="form-completedJob-table-top-page" method="get" action="http://192.168.199.80:4040/jobs/?&amp;completedJob.sort=Job+Id+%28Job+Group%29&amp;completedJob.desc=true#completed" class="form-inline float-right justify-content-end" style="margin-bottom: 0px;">
+          <input type="hidden" name="completedJob.sort" value="Job Id (Job Group)"><input type="hidden" name="completedJob.desc" value="true">
+          <label>1 Pages. Jump to</label>
+          <input type="text" name="completedJob.page" id="form-completedJob-table-top-page-no" value="1" class="col-1 form-control">
+
+          <label>. Show </label>
+          <input type="text" id="form-completedJob-table-top-page-size" name="completedJob.pageSize" value="100" class="col-1 form-control">
+          <label>items in a page.</label>
+
+          <button type="submit" class="btn btn-spark">Go</button>
+        </form>
+      </div>
+      <div>
+        <span style="float: left; padding-top: 4px; padding-right: 4px;">Page: </span>
+        <ul class="pagination">
+          
+          
+          <li class="page-item disabled"><a href="http://192.168.199.80:4040/jobs/#" class="page-link">1</a></li>
+          
+          
+        </ul>
+      </div>
+    </div>
+        <table class="table table-bordered table-sm table-striped table-head-clickable table-cell-width-limited" id="completedJob-table">
+          <thead>
+      <tr><th>
+            <a href="http://192.168.199.80:4040/jobs/?&amp;completedJob.sort=Job+Id+%28Job+Group%29&amp;completedJob.desc=false&amp;completedJob.pageSize=100#completed">
+              <span data-toggle="tooltip" data-placement="top" title="" data-original-title="">
+                Job Id (Job Group)&nbsp;▾
+              </span>
+            </a>
+          </th><th>
+              <a href="http://192.168.199.80:4040/jobs/?&amp;completedJob.sort=Description&amp;completedJob.pageSize=100#completed">
+                <span data-toggle="tooltip" data-placement="top" title="" data-original-title="">
+                  Description
+                </span>
+              </a>
+            </th><th>
+              <a href="http://192.168.199.80:4040/jobs/?&amp;completedJob.sort=Submitted&amp;completedJob.pageSize=100#completed">
+                <span data-toggle="tooltip" data-placement="top" title="" data-original-title="">
+                  Submitted
+                </span>
+              </a>
+            </th><th>
+              <a href="http://192.168.199.80:4040/jobs/?&amp;completedJob.sort=Duration&amp;completedJob.pageSize=100#completed">
+                <span data-toggle="tooltip" data-placement="top" title="" data-original-title="Elapsed time since the job was submitted until execution completion of all its stages.">
+                  Duration
+                </span>
+              </a>
+            </th><th>
+              <span data-toggle="tooltip" data-placement="top" title="" data-original-title="">
+                Stages: Succeeded/Total
+              </span>
+            </th><th>
+              <span data-toggle="tooltip" data-placement="top" title="" data-original-title="">
+                Tasks (for all stages): Succeeded/Total
+              </span>
+            </th></tr>
+    </thead>
+          <tbody>
+            <tr id="job-22">
+      <td>
+        22 (job group id)
+      </td>
+      <td>
+        <span class="description-input">calculate correlation</span> 
+        <a href="http://192.168.199.80:4040/jobs/job/?id=22" class="name-link">corr at DirectMethodHandleAccessor.java:104</a>
+      </td>
+      <td>
+        2023/01/01 17:38:56
+      </td>
+      <td>0.4 s</td>
+      <td class="stage-progress-cell">
+        1/1
+        
+        (1 skipped)
+      </td>
+      <td class="progress-cell">
+        <div class="progress">
+      <span style="text-align:center; position:absolute; width:100%;">
+        1/1
+        
+        
+        (24 skipped)
+        
+      </span>
+      <div class="progress-bar progress-completed" style="width: 100.0%"></div>
+      <div class="progress-bar progress-started" style="width: 0.0%"></div>
+    </div>
+      </td>
+    </tr><tr id="job-21">
+      <td>
+        21 (da55b22c-f0ec-4be6-8f85-30a23c064691)
+      </td>
+      <td>
+        <span class="description-input">broadcast exchange (runId da55b22c-f0ec-4be6-8f85-30a23c064691)</span> 
+        <a href="http://192.168.199.80:4040/jobs/job/?id=21" class="name-link">$anonfun$withThreadLocalCaptured$1 at FutureTask.java:317</a>
+      </td>
+      <td>
+        2023/01/01 17:38:46
+      </td>
+      <td>0.2 s</td>
+      <td class="stage-progress-cell">
+        1/1
+        
+        (1 skipped)
+      </td>
+      <td class="progress-cell">
+        <div class="progress">
+      <span style="text-align:center; position:absolute; width:100%;">
+        1/1
+        
+        
+        (24 skipped)
+        
+      </span>
+      <div class="progress-bar progress-completed" style="width: 100.0%"></div>
+      <div class="progress-bar progress-started" style="width: 0.0%"></div>
+    </div>
+      </td>
+    </tr><tr id="job-20">
+      <td>
+        20 (job group id)
+      </td>
+      <td>
+        <span class="description-input">calculate correlation</span> 
+        <a href="http://192.168.199.80:4040/jobs/job/?id=20" class="name-link">corr at DirectMethodHandleAccessor.java:104</a>
+      </td>
+      <td>
+        2023/01/01 17:38:11
+      </td>
+      <td>35 s</td>
+      <td class="stage-progress-cell">
+        1/1
+        
+        
+      </td>
+      <td class="progress-cell">
+        <div class="progress">
+      <span style="text-align:center; position:absolute; width:100%;">
+        24/24
+        
+        
+        
+        
+      </span>
+      <div class="progress-bar progress-completed" style="width: 100.0%"></div>
+      <div class="progress-bar progress-started" style="width: 0.0%"></div>
+    </div>
+      </td>
+    </tr><tr id="job-19">
+      <td>
+        19 (job group id)
+      </td>
+      <td>
+        <span class="description-input">calculate correlation</span> 
+        <a href="http://192.168.199.80:4040/jobs/job/?id=19" class="name-link">corr at DirectMethodHandleAccessor.java:104</a>
+      </td>
+      <td>
+        2023/01/01 17:38:11
+      </td>
+      <td>45 s</td>
+      <td class="stage-progress-cell">
+        1/1
+        
+        
+      </td>
+      <td class="progress-cell">
+        <div class="progress">
+      <span style="text-align:center; position:absolute; width:100%;">
+        24/24
+        
+        
+        
+        
+      </span>
+      <div class="progress-bar progress-completed" style="width: 100.0%"></div>
+      <div class="progress-bar progress-started" style="width: 0.0%"></div>
+    </div>
+      </td>
+    </tr><tr id="job-18">
+      <td>
+        18 (job group id)
+      </td>
+      <td>
+        <span class="description-input">join two dataframes</span> 
+        <a href="http://192.168.199.80:4040/jobs/job/?id=18" class="name-link">showString at DirectMethodHandleAccessor.java:104</a>
+      </td>
+      <td>
+        2023/01/01 17:38:10
+      </td>
+      <td>0.3 s</td>
+      <td class="stage-progress-cell">
+        1/1
+        
+        (1 skipped)
+      </td>
+      <td class="progress-cell">
+        <div class="progress">
+      <span style="text-align:center; position:absolute; width:100%;">
+        1/1
+        
+        
+        (24 skipped)
+        
+      </span>
+      <div class="progress-bar progress-completed" style="width: 100.0%"></div>
+      <div class="progress-bar progress-started" style="width: 0.0%"></div>
+    </div>
+      </td>
+    </tr><tr id="job-17">
+      <td>
+        17 (28e647e3-bac5-406b-a672-5cdac5ae59d9)
+      </td>
+      <td>
+        <span class="description-input">broadcast exchange (runId 28e647e3-bac5-406b-a672-5cdac5ae59d9)</span> 
+        <a href="http://192.168.199.80:4040/jobs/job/?id=17" class="name-link">$anonfun$withThreadLocalCaptured$1 at FutureTask.java:317</a>
+      </td>
+      <td>
+        2023/01/01 17:38:03
+      </td>
+      <td>0.4 s</td>
+      <td class="stage-progress-cell">
+        1/1
+        
+        (1 skipped)
+      </td>
+      <td class="progress-cell">
+        <div class="progress">
+      <span style="text-align:center; position:absolute; width:100%;">
+        1/1
+        
+        
+        (24 skipped)
+        
+      </span>
+      <div class="progress-bar progress-completed" style="width: 100.0%"></div>
+      <div class="progress-bar progress-started" style="width: 0.0%"></div>
+    </div>
+      </td>
+    </tr><tr id="job-16">
+      <td>
+        16 (job group id)
+      </td>
+      <td>
+        <span class="description-input">join two dataframes</span> 
+        <a href="http://192.168.199.80:4040/jobs/job/?id=16" class="name-link">showString at DirectMethodHandleAccessor.java:104</a>
+      </td>
+      <td>
+        2023/01/01 17:37:28
+      </td>
+      <td>34 s</td>
+      <td class="stage-progress-cell">
+        1/1
+        
+        
+      </td>
+      <td class="progress-cell">
+        <div class="progress">
+      <span style="text-align:center; position:absolute; width:100%;">
+        24/24
+        
+        
+        
+        
+      </span>
+      <div class="progress-bar progress-completed" style="width: 100.0%"></div>
+      <div class="progress-bar progress-started" style="width: 0.0%"></div>
+    </div>
+      </td>
+    </tr><tr id="job-15">
+      <td>
+        15 (job group id)
+      </td>
+      <td>
+        <span class="description-input">join two dataframes</span> 
+        <a href="http://192.168.199.80:4040/jobs/job/?id=15" class="name-link">showString at DirectMethodHandleAccessor.java:104</a>
+      </td>
+      <td>
+        2023/01/01 17:37:28
+      </td>
+      <td>42 s</td>
+      <td class="stage-progress-cell">
+        1/1
+        
+        
+      </td>
+      <td class="progress-cell">
+        <div class="progress">
+      <span style="text-align:center; position:absolute; width:100%;">
+        24/24
+        
+        
+        
+        
+      </span>
+      <div class="progress-bar progress-completed" style="width: 100.0%"></div>
+      <div class="progress-bar progress-started" style="width: 0.0%"></div>
+    </div>
+      </td>
+    </tr><tr id="job-14">
+      <td>
+        14 (job group id)
+      </td>
+      <td>
+        <span class="description-input">adding additional month and year columns</span> 
+        <a href="http://192.168.199.80:4040/jobs/job/?id=14" class="name-link">showString at DirectMethodHandleAccessor.java:104</a>
+      </td>
+      <td>
+        2023/01/01 17:37:27
+      </td>
+      <td>0.2 s</td>
+      <td class="stage-progress-cell">
+        1/1
+        
+        (1 skipped)
+      </td>
+      <td class="progress-cell">
+        <div class="progress">
+      <span style="text-align:center; position:absolute; width:100%;">
+        1/1
+        
+        
+        (24 skipped)
+        
+      </span>
+      <div class="progress-bar progress-completed" style="width: 100.0%"></div>
+      <div class="progress-bar progress-started" style="width: 0.0%"></div>
+    </div>
+      </td>
+    </tr><tr id="job-13">
+      <td>
+        13 (job group id)
+      </td>
+      <td>
+        <span class="description-input">adding additional month and year columns</span> 
+        <a href="http://192.168.199.80:4040/jobs/job/?id=13" class="name-link">showString at DirectMethodHandleAccessor.java:104</a>
+      </td>
+      <td>
+        2023/01/01 17:36:50
+      </td>
+      <td>37 s</td>
+      <td class="stage-progress-cell">
+        1/1
+        
+        
+      </td>
+      <td class="progress-cell">
+        <div class="progress">
+      <span style="text-align:center; position:absolute; width:100%;">
+        24/24
+        
+        
+        
+        
+      </span>
+      <div class="progress-bar progress-completed" style="width: 100.0%"></div>
+      <div class="progress-bar progress-started" style="width: 0.0%"></div>
+    </div>
+      </td>
+    </tr><tr id="job-12">
+      <td>
+        12 (job group id)
+      </td>
+      <td>
+        <span class="description-input">new dataframe with only december</span> 
+        <a href="http://192.168.199.80:4040/jobs/job/?id=12" class="name-link">showString at DirectMethodHandleAccessor.java:104</a>
+      </td>
+      <td>
+        2023/01/01 17:36:50
+      </td>
+      <td>86 ms</td>
+      <td class="stage-progress-cell">
+        1/1
+        
+        (1 skipped)
+      </td>
+      <td class="progress-cell">
+        <div class="progress">
+      <span style="text-align:center; position:absolute; width:100%;">
+        1/1
+        
+        
+        (24 skipped)
+        
+      </span>
+      <div class="progress-bar progress-completed" style="width: 100.0%"></div>
+      <div class="progress-bar progress-started" style="width: 0.0%"></div>
+    </div>
+      </td>
+    </tr><tr id="job-11">
+      <td>
+        11 (job group id)
+      </td>
+      <td>
+        <span class="description-input">new dataframe with only december</span> 
+        <a href="http://192.168.199.80:4040/jobs/job/?id=11" class="name-link">showString at DirectMethodHandleAccessor.java:104</a>
+      </td>
+      <td>
+        2023/01/01 17:36:12
+      </td>
+      <td>37 s</td>
+      <td class="stage-progress-cell">
+        1/1
+        
+        
+      </td>
+      <td class="progress-cell">
+        <div class="progress">
+      <span style="text-align:center; position:absolute; width:100%;">
+        24/24
+        
+        
+        
+        
+      </span>
+      <div class="progress-bar progress-completed" style="width: 100.0%"></div>
+      <div class="progress-bar progress-started" style="width: 0.0%"></div>
+    </div>
+      </td>
+    </tr><tr id="job-10">
+      <td>
+        10 (job group id)
+      </td>
+      <td>
+        <span class="description-input">calculate average temperature for each year+month+stations_id</span> 
+        <a href="http://192.168.199.80:4040/jobs/job/?id=10" class="name-link">showString at DirectMethodHandleAccessor.java:104</a>
+      </td>
+      <td>
+        2023/01/01 17:36:12
+      </td>
+      <td>0.2 s</td>
+      <td class="stage-progress-cell">
+        1/1
+        
+        (1 skipped)
+      </td>
+      <td class="progress-cell">
+        <div class="progress">
+      <span style="text-align:center; position:absolute; width:100%;">
+        1/1
+        
+        
+        (24 skipped)
+        
+      </span>
+      <div class="progress-bar progress-completed" style="width: 100.0%"></div>
+      <div class="progress-bar progress-started" style="width: 0.0%"></div>
+    </div>
+      </td>
+    </tr><tr id="job-9" class="">
+      <td>
+        9 (job group id)
+      </td>
+      <td>
+        <span class="description-input">calculate average temperature for each year+month+stations_id</span> 
+        <a href="http://192.168.199.80:4040/jobs/job/?id=9" class="name-link">showString at DirectMethodHandleAccessor.java:104</a>
+      </td>
+      <td>
+        2023/01/01 17:35:32
+      </td>
+      <td>39 s</td>
+      <td class="stage-progress-cell">
+        1/1
+        
+        
+      </td>
+      <td class="progress-cell">
+        <div class="progress">
+      <span style="text-align:center; position:absolute; width:100%;">
+        24/24
+        
+        
+        
+        
+      </span>
+      <div class="progress-bar progress-completed" style="width: 100.0%"></div>
+      <div class="progress-bar progress-started" style="width: 0.0%"></div>
+    </div>
+      </td>
+    </tr><tr id="job-8">
+      <td>
+        8 (job group id)
+      </td>
+      <td>
+        <span class="description-input">convert timestamp into month and year</span> 
+        <a href="http://192.168.199.80:4040/jobs/job/?id=8" class="name-link">showString at DirectMethodHandleAccessor.java:104</a>
+      </td>
+      <td>
+        2023/01/01 17:35:31
+      </td>
+      <td>0.2 s</td>
+      <td class="stage-progress-cell">
+        1/1
+        
+        
+      </td>
+      <td class="progress-cell">
+        <div class="progress">
+      <span style="text-align:center; position:absolute; width:100%;">
+        1/1
+        
+        
+        
+        
+      </span>
+      <div class="progress-bar progress-completed" style="width: 100.0%"></div>
+      <div class="progress-bar progress-started" style="width: 0.0%"></div>
+    </div>
+      </td>
+    </tr><tr id="job-7">
+      <td>
+        7 (job group id)
+      </td>
+      <td>
+        <span class="description-input">filter only june and december</span> 
+        <a href="http://192.168.199.80:4040/jobs/job/?id=7" class="name-link">showString at DirectMethodHandleAccessor.java:104</a>
+      </td>
+      <td>
+        2023/01/01 17:35:31
+      </td>
+      <td>0.2 s</td>
+      <td class="stage-progress-cell">
+        1/1
+        
+        
+      </td>
+      <td class="progress-cell">
+        <div class="progress">
+      <span style="text-align:center; position:absolute; width:100%;">
+        1/1
+        
+        
+        
+        
+      </span>
+      <div class="progress-bar progress-completed" style="width: 100.0%"></div>
+      <div class="progress-bar progress-started" style="width: 0.0%"></div>
+    </div>
+      </td>
+    </tr><tr id="job-6">
+      <td>
+        6 (job group id)
+      </td>
+      <td>
+        <span class="description-input">group by</span> 
+        <a href="http://192.168.199.80:4040/jobs/job/?id=6" class="name-link">showString at DirectMethodHandleAccessor.java:104</a>
+      </td>
+      <td>
+        2023/01/01 17:35:30
+      </td>
+      <td>0.8 s</td>
+      <td class="stage-progress-cell">
+        1/1
+        
+        (1 skipped)
+      </td>
+      <td class="progress-cell">
+        <div class="progress">
+      <span style="text-align:center; position:absolute; width:100%;">
+        1/1
+        
+        
+        (24 skipped)
+        
+      </span>
+      <div class="progress-bar progress-completed" style="width: 100.0%"></div>
+      <div class="progress-bar progress-started" style="width: 0.0%"></div>
+    </div>
+      </td>
+    </tr><tr id="job-5" class="">
+      <td>
+        5 (job group id)
+      </td>
+      <td>
+        <span class="description-input">group by</span> 
+        <a href="http://192.168.199.80:4040/jobs/job/?id=5" class="name-link">showString at DirectMethodHandleAccessor.java:104</a>
+      </td>
+      <td>
+        2023/01/01 17:35:01
+      </td>
+      <td>28 s</td>
+      <td class="stage-progress-cell">
+        1/1
+        
+        
+      </td>
+      <td class="progress-cell">
+        <div class="progress">
+      <span style="text-align:center; position:absolute; width:100%;">
+        24/24
+        
+        
+        
+        
+      </span>
+      <div class="progress-bar progress-completed" style="width: 100.0%"></div>
+      <div class="progress-bar progress-started" style="width: 0.0%"></div>
+    </div>
+      </td>
+    </tr><tr id="job-4">
+      <td>
+        4 (job group id)
+      </td>
+      <td>
+        <span class="description-input">show 5 rows of df</span> 
+        <a href="http://192.168.199.80:4040/jobs/job/?id=4" class="name-link">showString at DirectMethodHandleAccessor.java:104</a>
+      </td>
+      <td>
+        2023/01/01 17:35:01
+      </td>
+      <td>0.1 s</td>
+      <td class="stage-progress-cell">
+        1/1
+        
+        
+      </td>
+      <td class="progress-cell">
+        <div class="progress">
+      <span style="text-align:center; position:absolute; width:100%;">
+        1/1
+        
+        
+        
+        
+      </span>
+      <div class="progress-bar progress-completed" style="width: 100.0%"></div>
+      <div class="progress-bar progress-started" style="width: 0.0%"></div>
+    </div>
+      </td>
+    </tr><tr id="job-3">
+      <td>
+        3 (job group id)
+      </td>
+      <td>
+        <span class="description-input">show 5 rows of df</span> 
+        <a href="http://192.168.199.80:4040/jobs/job/?id=3" class="name-link">showString at DirectMethodHandleAccessor.java:104</a>
+      </td>
+      <td>
+        2023/01/01 17:35:00
+      </td>
+      <td>0.2 s</td>
+      <td class="stage-progress-cell">
+        1/1
+        
+        
+      </td>
+      <td class="progress-cell">
+        <div class="progress">
+      <span style="text-align:center; position:absolute; width:100%;">
+        1/1
+        
+        
+        
+        
+      </span>
+      <div class="progress-bar progress-completed" style="width: 100.0%"></div>
+      <div class="progress-bar progress-started" style="width: 0.0%"></div>
+    </div>
+      </td>
+    </tr><tr id="job-2">
+      <td>
+        2 (job group id)
+      </td>
+      <td>
+        <span class="description-input">read all files from HDFS and print the schema</span> 
+        <a href="http://192.168.199.80:4040/jobs/job/?id=2" class="name-link">csv at DirectMethodHandleAccessor.java:104</a>
+      </td>
+      <td>
+        2023/01/01 17:34:30
+      </td>
+      <td>29 s</td>
+      <td class="stage-progress-cell">
+        1/1
+        
+        
+      </td>
+      <td class="progress-cell">
+        <div class="progress">
+      <span style="text-align:center; position:absolute; width:100%;">
+        24/24
+        
+        
+        
+        
+      </span>
+      <div class="progress-bar progress-completed" style="width: 100.0%"></div>
+      <div class="progress-bar progress-started" style="width: 0.0%"></div>
+    </div>
+      </td>
+    </tr><tr id="job-1">
+      <td>
+        1 (job group id)
+      </td>
+      <td>
+        <span class="description-input">read all files from HDFS and print the schema</span> 
+        <a href="http://192.168.199.80:4040/jobs/job/?id=1" class="name-link">csv at DirectMethodHandleAccessor.java:104</a>
+      </td>
+      <td>
+        2023/01/01 17:34:29
+      </td>
+      <td>0.7 s</td>
+      <td class="stage-progress-cell">
+        1/1
+        
+        
+      </td>
+      <td class="progress-cell">
+        <div class="progress">
+      <span style="text-align:center; position:absolute; width:100%;">
+        1/1
+        
+        
+        
+        
+      </span>
+      <div class="progress-bar progress-completed" style="width: 100.0%"></div>
+      <div class="progress-bar progress-started" style="width: 0.0%"></div>
+    </div>
+      </td>
+    </tr><tr id="job-0">
+      <td>
+        0 (job group id)
+      </td>
+      <td>
+        <span class="description-input">Listing leaf files and directories for 100 paths:<br>hdfs://192.168.199.80:9000/user/mario/input_files/10minutenwerte_only_100/produkt_zehn_min_tu_19900101_19991231_03366.txt, ...</span> 
+        <a href="http://192.168.199.80:4040/jobs/job/?id=0" class="name-link">csv at DirectMethodHandleAccessor.java:104</a>
+      </td>
+      <td>
+        2023/01/01 17:34:24
+      </td>
+      <td>2 s</td>
+      <td class="stage-progress-cell">
+        1/1
+        
+        
+      </td>
+      <td class="progress-cell">
+        <div class="progress">
+      <span style="text-align:center; position:absolute; width:100%;">
+        100/100
+        
+        
+        
+        
+      </span>
+      <div class="progress-bar progress-completed" style="width: 100.0%"></div>
+      <div class="progress-bar progress-started" style="width: 0.0%"></div>
+    </div>
+      </td>
+    </tr>
+          </tbody>
+        </table>
+        <div>
+      <div>
+        <form id="form-completedJob-table-bottom-page" method="get" action="http://192.168.199.80:4040/jobs/?&amp;completedJob.sort=Job+Id+%28Job+Group%29&amp;completedJob.desc=true#completed" class="form-inline float-right justify-content-end" style="margin-bottom: 0px;">
+          <input type="hidden" name="completedJob.sort" value="Job Id (Job Group)"><input type="hidden" name="completedJob.desc" value="true">
+          <label>1 Pages. Jump to</label>
+          <input type="text" name="completedJob.page" id="form-completedJob-table-bottom-page-no" value="1" class="col-1 form-control">
+
+          <label>. Show </label>
+          <input type="text" id="form-completedJob-table-bottom-page-size" name="completedJob.pageSize" value="100" class="col-1 form-control">
+          <label>items in a page.</label>
+
+          <button type="submit" class="btn btn-spark">Go</button>
+        </form>
+      </div>
+      <div>
+        <span style="float: left; padding-top: 4px; padding-right: 4px;">Page: </span>
+        <ul class="pagination">
+          
+          
+          <li class="page-item disabled"><a href="http://192.168.199.80:4040/jobs/#" class="page-link">1</a></li>
+          
+          
+        </ul>
+      </div>
+    </div>
+      </div>
+        </div>
+            </div>
+          </div>
+        </div>
+      
+    </body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
